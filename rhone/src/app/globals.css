@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf5ee;
+  --foreground: #3b2317;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
+
+  --color-rhone-50: #fefcfa;
+  --color-rhone-100: #f6e9d8;
+  --color-rhone-150: #f0ddc4;
+  --color-rhone-200: #edd2b0;
+  --color-rhone-300: #e1b383;
+  --color-rhone-400: #d18f56;
+  --color-rhone-500: #c1713a;
+  --color-rhone-600: #a85a2c;
+  --color-rhone-700: #874523;
+  --color-rhone-800: #5c3220;
+  --color-rhone-900: #3b2317;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: var(--color-rhone-300);
+  color: var(--color-rhone-900);
+}
