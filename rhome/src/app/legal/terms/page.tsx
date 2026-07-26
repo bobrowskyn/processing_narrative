@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms that govern your use of Rhome.",
+  description: "The terms that govern your use of RHOME.",
 };
 
 export default function TermsPage() {
@@ -19,12 +19,28 @@ export default function TermsPage() {
       <div className="mt-10 space-y-8 text-rhome-800">
         <div>
           <h2 className="text-lg font-semibold text-rhome-900">
-            The Rhome platform
+            The RHOME platform
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
-            Rhome is a technology platform that connects users with
-            independent, licensed clinicians. Rhome does not practice
-            medicine or provide medical advice directly.
+            RHOME is a technology platform that connects users with
+            independent, licensed clinicians and facilitates compounding of
+            prescribed peptides through licensed 503A/503B pharmacies.
+            RHOME does not practice medicine, provide medical advice
+            directly, or manufacture medications.
+          </p>
+        </div>
+        <div>
+          <h2 className="text-lg font-semibold text-rhome-900">
+            Compounded peptides
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed">
+            Compounded peptides are not independently reviewed by the FDA
+            for safety, effectiveness, or quality the way approved drugs
+            are. Where a product page notes that a peptide has been
+            recommended by an FDA advisory committee for compounding
+            eligibility, that recommendation is not FDA approval of a drug
+            product, and the committee&apos;s recommendation may not be
+            adopted by the FDA or may change.
           </p>
         </div>
         <div>
@@ -42,7 +58,7 @@ export default function TermsPage() {
             Emergencies
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
-            Rhome is not for medical emergencies. If you are experiencing a
+            RHOME is not for medical emergencies. If you are experiencing a
             medical emergency, call 911 or go to the nearest emergency room.
           </p>
         </div>

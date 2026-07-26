@@ -2,22 +2,22 @@ const steps = [
   {
     number: "01",
     title: "Complete an online visit",
-    body: "Answer a few questions about your health and goals — from your phone, in about five minutes.",
+    body: "Answer a few questions about your health, goals, and the peptide you're interested in — from your phone, in about five minutes.",
   },
   {
     number: "02",
     title: "Hear back from a clinician",
-    body: "A licensed clinician reviews your case and responds, usually within a day, sometimes minutes.",
+    body: "A licensed clinician reviews your case and, if appropriate, writes a prescription — usually within a day.",
   },
   {
     number: "03",
-    title: "Get your plan, delivered",
-    body: "If treatment is right for you, it ships free in discreet packaging to your door.",
+    title: "A licensed pharmacy compounds it",
+    body: "Your prescription is compounded by a licensed 503A/503B U.S. pharmacy and shipped in discreet, temperature-safe packaging.",
   },
   {
     number: "04",
     title: "Stay supported",
-    body: "Message your care team any time. Adjust your plan as your needs change.",
+    body: "Message your care team any time. Your clinician reviews your plan before every renewal.",
   },
 ];
 
@@ -27,11 +27,11 @@ export default function HowItWorks() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl text-rhome-900 sm:text-4xl">
-            How Rhome works
+            How RHOME works
           </h2>
           <p className="mt-4 text-rhome-700">
-            No office visits. No waiting rooms. Just a clear path from
-            question to treatment.
+            No office visits. No waiting rooms. Just a clear, clinician-led
+            path from question to compounded prescription.
           </p>
         </div>
 

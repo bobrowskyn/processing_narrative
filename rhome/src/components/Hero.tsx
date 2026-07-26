@@ -7,16 +7,17 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
         <div>
           <span className="inline-flex items-center rounded-full bg-rhome-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-rhome-700">
-            Licensed clinicians · U.S. wide
+            Licensed clinicians · Compounded by U.S. pharmacies
           </span>
           <h1 className="font-display mt-6 text-4xl leading-[1.1] text-rhome-900 sm:text-5xl md:text-6xl">
-            Real care, without the{" "}
-            <span className="italic text-rhome-600">waiting room.</span>
+            Peptide therapy,{" "}
+            <span className="italic text-rhome-600">clinically guided.</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg text-rhome-700">
-            Rhome connects you with licensed clinicians online for hair,
-            skin, weight, sexual health, and mental wellness — with
-            treatment shipped straight to your door.
+            RHOME connects you with licensed clinicians for compounded
+            peptide therapy — GLP-1 weight loss, recovery, longevity, and
+            wellness essentials — prepared by licensed U.S. pharmacies and
+            shipped to your door.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
@@ -35,9 +36,9 @@ export default function Hero() {
 
           <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-rhome-200 pt-8">
             <div>
-              <dt className="sr-only">Members treated</dt>
-              <dd className="font-display text-2xl text-rhome-900">2M+</dd>
-              <p className="text-xs text-rhome-600">members treated</p>
+              <dt className="sr-only">Peptides available</dt>
+              <dd className="font-display text-2xl text-rhome-900">11</dd>
+              <p className="text-xs text-rhome-600">peptides available</p>
             </div>
             <div>
               <dt className="sr-only">Average clinician response</dt>

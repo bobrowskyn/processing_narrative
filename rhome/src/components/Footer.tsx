@@ -1,21 +1,18 @@
 import Link from "next/link";
+import { categories } from "@/lib/peptides";
 
 const columns = [
   {
-    title: "Treatments",
-    links: [
-      { href: "/treatments/hair", label: "Hair Loss" },
-      { href: "/treatments/skin", label: "Skincare" },
-      { href: "/treatments/sexual-health", label: "Sexual Health" },
-      { href: "/treatments/weight", label: "Weight Management" },
-      { href: "/treatments/mental-health", label: "Mental Health" },
-      { href: "/treatments/primary-care", label: "Primary Care" },
-    ],
+    title: "Peptides",
+    links: categories.map((c) => ({
+      href: `/peptides#${c.slug}`,
+      label: c.name,
+    })),
   },
   {
     title: "Company",
     links: [
-      { href: "/about", label: "About Rhome" },
+      { href: "/about", label: "About RHOME" },
       { href: "/how-it-works", label: "How it works" },
       { href: "/pricing", label: "Pricing" },
       { href: "/faq", label: "FAQ" },
@@ -36,10 +33,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           <div className="col-span-2">
-            <span className="font-display text-2xl text-rhome-50">Rhome</span>
+            <span className="font-display text-2xl text-rhome-50">RHOME</span>
             <p className="mt-3 max-w-xs text-sm text-rhome-300">
-              Licensed clinicians, real treatment, delivered to your door.
-              Telehealth built around you.
+              Licensed clinicians, compounded peptide therapy, delivered to
+              your door.
             </p>
           </div>
           {columns.map((col) => (
@@ -65,16 +62,21 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-rhome-700/60 pt-8 text-xs leading-relaxed text-rhome-400">
           <p>
-            Rhome is a telehealth platform that facilitates connections between
-            patients and independent, licensed clinicians. Rhome does not
-            itself provide medical advice or practice medicine. Not all
-            patients will be prescribed treatment — clinicians determine what,
-            if anything, is appropriate after an online consultation. If you
-            are experiencing a medical emergency, call 911. If you are in
-            crisis, call or text 988 (Suicide &amp; Crisis Lifeline).
+            RHOME is a telehealth platform that facilitates connections
+            between patients and independent, licensed clinicians, and
+            arranges compounding of prescribed peptides through licensed
+            503A/503B pharmacies. RHOME does not itself practice medicine or
+            manufacture medications. Compounded peptides are not
+            independently reviewed by the FDA for safety, effectiveness, or
+            quality the way approved drugs are — some peptides referenced on
+            this site have only been recommended by an FDA advisory
+            committee for compounding eligibility, which is not the same as
+            FDA approval. Not all patients will be prescribed treatment. If
+            you are experiencing a medical emergency, call 911. If you are
+            in crisis, call or text 988 (Suicide &amp; Crisis Lifeline).
           </p>
           <p className="mt-4">
-            © {new Date().getFullYear()} Rhome Health, Inc. All rights
+            © {new Date().getFullYear()} RHOME Health, Inc. All rights
             reserved.
           </p>
         </div>

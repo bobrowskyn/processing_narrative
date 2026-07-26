@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { treatments } from "@/lib/treatments";
+import { categories, peptides, peptidesByCategory } from "@/lib/peptides";
 
 const STATES = [
   "California",
@@ -14,7 +14,7 @@ const STATES = [
 
 export default function IntakeWizard() {
   const [step, setStep] = useState(0);
-  const [category, setCategory] = useState<string | null>(null);
+  const [peptideSlug, setPeptideSlug] = useState<string | null>(null);
   const [name, setName] = useState("");
   const [state, setState] = useState("");
   const [dob, setDob] = useState("");
@@ -24,7 +24,7 @@ export default function IntakeWizard() {
   const totalSteps = 3;
 
   const canContinue =
-    (step === 0 && category) ||
+    (step === 0 && peptideSlug) ||
     (step === 1 && name.trim() && state && dob) ||
     step === 2;
 
@@ -41,7 +41,7 @@ export default function IntakeWizard() {
   }
 
   if (submitted) {
-    const chosen = treatments.find((t) => t.slug === category);
+    const chosen = peptides.find((p) => p.slug === peptideSlug);
     return (
       <div className="rounded-3xl border border-rhome-200 bg-rhome-50 p-10 text-center">
         <span className="text-4xl">✓</span>
@@ -49,9 +49,10 @@ export default function IntakeWizard() {
           You&apos;re on your way, {name.split(" ")[0] || "there"}.
         </h2>
         <p className="mt-3 text-rhome-700">
-          Thanks for sharing a bit about your {chosen?.name.toLowerCase()}{" "}
-          goals. In a live visit, this is where a licensed clinician in{" "}
-          {state} would review your intake and follow up within 24 hours.
+          Thanks for sharing your interest in {chosen?.name}. In a live
+          visit, this is where a licensed clinician in {state} would review
+          your intake and, if appropriate, send a prescription to a
+          compounding pharmacy — usually within 24 hours.
         </p>
         <p className="mt-6 text-xs text-rhome-500">
           This is a demo flow — no information you entered was sent
@@ -77,25 +78,35 @@ export default function IntakeWizard() {
       {step === 0 && (
         <div>
           <h2 className="font-display text-2xl text-rhome-900">
-            What brings you in today?
+            Which peptide are you interested in?
           </h2>
           <p className="mt-2 text-sm text-rhome-600">
-            Choose the area you&apos;d like to focus on first.
+            Choose one to start. Your clinician can adjust or add to your
+            plan during your visit.
           </p>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {treatments.map((t) => (
-              <button
-                key={t.slug}
-                type="button"
-                onClick={() => setCategory(t.slug)}
-                className={`rounded-2xl border px-5 py-4 text-left text-sm font-semibold transition ${
-                  category === t.slug
-                    ? "border-rhome-600 bg-rhome-100 text-rhome-900"
-                    : "border-rhome-200 bg-rhome-50 text-rhome-800 hover:border-rhome-400"
-                }`}
-              >
-                {t.name}
-              </button>
+          <div className="mt-6 space-y-6">
+            {categories.map((c) => (
+              <div key={c.slug}>
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-rhome-500">
+                  {c.name}
+                </h3>
+                <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                  {peptidesByCategory(c.slug).map((p) => (
+                    <button
+                      key={p.slug}
+                      type="button"
+                      onClick={() => setPeptideSlug(p.slug)}
+                      className={`rounded-2xl border px-5 py-4 text-left text-sm font-semibold transition ${
+                        peptideSlug === p.slug
+                          ? "border-rhome-600 bg-rhome-100 text-rhome-900"
+                          : "border-rhome-200 bg-rhome-50 text-rhome-800 hover:border-rhome-400"
+                      }`}
+                    >
+                      {p.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -1,21 +1,21 @@
 const quotes = [
   {
     quote:
-      "I put off dealing with my hair for two years because I dreaded the appointment. This took ten minutes and my prescription showed up three days later.",
+      "My clinician actually walked me through what compounded semaglutide means versus the brand name before I started. Didn't feel rushed at all.",
     name: "Marcus T.",
-    detail: "Hair Loss member since 2024",
+    detail: "Semaglutide member since 2025",
   },
   {
     quote:
-      "The clinician actually asked follow-up questions instead of just approving whatever I typed. Felt like real care, not a form.",
+      "I was skeptical about BPC-157 until my clinician explained the compounding status honestly instead of overselling it. That's why I trust the plan.",
     name: "Priya S.",
-    detail: "Skincare member since 2025",
+    detail: "Recovery member since 2026",
   },
   {
     quote:
       "Being able to message my care team between check-ins made a bigger difference than I expected. It doesn't feel like I'm on my own.",
     name: "Devon K.",
-    detail: "Weight Management member since 2024",
+    detail: "Sermorelin member since 2025",
   },
 ];
 

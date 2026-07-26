@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { treatments } from "@/lib/treatments";
+import { peptides } from "@/lib/peptides";
 
 const BASE_URL = "https://rhome.example.com";
 
@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/how-it-works",
-    "/treatments",
+    "/peptides",
     "/pricing",
     "/about",
     "/faq",
@@ -19,10 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  const treatmentRoutes = treatments.map((t) => ({
-    url: `${BASE_URL}/treatments/${t.slug}`,
+  const peptideRoutes = peptides.map((p) => ({
+    url: `${BASE_URL}/peptides/${p.slug}`,
     lastModified: new Date(),
   }));
 
-  return [...staticRoutes, ...treatmentRoutes];
+  return [...staticRoutes, ...peptideRoutes];
 }

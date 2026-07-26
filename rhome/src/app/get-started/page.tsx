@@ -3,7 +3,7 @@ import IntakeWizard from "@/components/IntakeWizard";
 
 export const metadata: Metadata = {
   title: "Get started",
-  description: "Start your online visit with a licensed Rhome clinician.",
+  description: "Start your online visit with a licensed RHOME clinician.",
 };
 
 export default function GetStartedPage() {

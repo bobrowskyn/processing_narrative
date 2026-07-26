@@ -5,7 +5,7 @@ import CtaBanner from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Rhome is building telehealth that treats people like people — licensed clinicians, real plans, no waiting rooms.",
+    "RHOME connects people with licensed clinicians for compounded peptide therapy — plain about what's approved, what's recommended, and what's not.",
 };
 
 const values = [
@@ -14,8 +14,8 @@ const values = [
     body: "Every plan is reviewed and approved by a licensed clinician — never an algorithm making a prescribing decision on its own.",
   },
   {
-    title: "Plain about what we are",
-    body: "Rhome facilitates access to independent clinicians. We're clear about what we can and can't do, and we say no when something isn't a fit.",
+    title: "Plain about regulatory status",
+    body: "We say clearly which peptides are FDA-approved active ingredients, which are newly recommended for compounding, and which have no such recommendation at all. No dressing up a committee vote as an approval.",
   },
   {
     title: "Built for follow-through",
@@ -30,14 +30,16 @@ export default function AboutPage() {
         <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
           <div className="max-w-2xl">
             <h1 className="font-display text-4xl text-rhome-900 sm:text-5xl">
-              We started Rhome because care shouldn&apos;t require a day off.
+              We started RHOME because peptide therapy deserved a clinician,
+              not just a checkout page.
             </h1>
             <p className="mt-5 text-lg text-rhome-700">
-              Millions of people put off ordinary health concerns — hair,
-              skin, weight, mood, everyday symptoms — simply because getting
-              seen takes too long. Rhome exists to close that gap with
-              licensed clinicians, transparent pricing, and treatment that
-              shows up at your door.
+              Interest in peptides — from GLP-1s to recovery and longevity
+              compounds — has outpaced access to clinicians who can
+              prescribe and monitor them responsibly. RHOME exists to close
+              that gap: licensed clinicians, compounding by licensed U.S.
+              pharmacies, and transparent pricing and regulatory status for
+              every peptide we offer.
             </p>
           </div>
           <Shape kind="leaf" className="hidden h-40 w-40 md:block" />

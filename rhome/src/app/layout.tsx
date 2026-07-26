@@ -19,11 +19,11 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rhome — Telehealth, without the waiting room",
-    template: "%s | Rhome",
+    default: "RHOME — Peptide therapy, clinically guided",
+    template: "%s | RHOME",
   },
   description:
-    "Rhome connects you with licensed clinicians online for hair, skin, weight, sexual health, and mental wellness care — discreet, affordable, delivered to your door.",
+    "RHOME connects you with licensed clinicians for compounded peptide therapy — GLP-1 weight loss, recovery, longevity, and wellness essentials — prepared by licensed U.S. pharmacies and delivered to your door.",
 };
 
 export default function RootLayout({

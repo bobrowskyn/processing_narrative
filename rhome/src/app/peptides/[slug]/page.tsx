@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { treatments, getTreatment } from "@/lib/treatments";
+import { peptides, getPeptide } from "@/lib/peptides";
 import Shape from "@/components/Shape";
+import ComplianceBadge from "@/components/ComplianceBadge";
 import FaqAccordion from "@/components/FaqAccordion";
 import CtaBanner from "@/components/CtaBanner";
 
@@ -11,26 +12,26 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return treatments.map((t) => ({ slug: t.slug }));
+  return peptides.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const treatment = getTreatment(slug);
-  if (!treatment) return {};
+  const peptide = getPeptide(slug);
+  if (!peptide) return {};
   return {
-    title: treatment.name,
-    description: treatment.description,
+    title: peptide.name,
+    description: peptide.summary,
   };
 }
 
-export default async function TreatmentPage({ params }: Props) {
+export default async function PeptidePage({ params }: Props) {
   const { slug } = await params;
-  const treatment = getTreatment(slug);
+  const peptide = getPeptide(slug);
 
-  if (!treatment) {
+  if (!peptide) {
     notFound();
   }
 
@@ -38,21 +39,24 @@ export default async function TreatmentPage({ params }: Props) {
     <>
       <section className="mx-auto max-w-7xl px-6 py-16">
         <Link
-          href="/treatments"
+          href="/peptides"
           className="text-sm font-medium text-rhome-600 hover:text-rhome-800"
         >
-          ← All treatments
+          ← All peptides
         </Link>
 
         <div className="mt-6 grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
           <div>
+            {peptide.newlyRecommended && (
+              <div className="mb-4">
+                <ComplianceBadge />
+              </div>
+            )}
             <h1 className="font-display text-4xl text-rhome-900 sm:text-5xl">
-              {treatment.name}
+              {peptide.name}
             </h1>
-            <p className="mt-3 text-xl text-rhome-700">{treatment.tagline}</p>
-            <p className="mt-5 max-w-2xl text-rhome-700">
-              {treatment.description}
-            </p>
+            <p className="mt-3 text-xl text-rhome-700">{peptide.tagline}</p>
+            <p className="mt-5 max-w-2xl text-rhome-700">{peptide.about}</p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
@@ -62,15 +66,18 @@ export default async function TreatmentPage({ params }: Props) {
                 Start your visit
               </Link>
               <span className="text-sm font-semibold text-rhome-800">
-                From {treatment.price} {treatment.cadence}
+                {peptide.price} {peptide.cadence}
+              </span>
+              <span className="text-sm text-rhome-500">
+                {peptide.format}
               </span>
             </div>
           </div>
-          <Shape kind={treatment.shape} className="hidden h-40 w-40 md:block" />
+          <Shape kind={peptide.shape} className="hidden h-40 w-40 md:block" />
         </div>
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2">
-          {treatment.bullets.map((b) => (
+          {peptide.bullets.map((b) => (
             <li
               key={b}
               className="flex items-start gap-3 rounded-2xl border border-rhome-200 bg-rhome-50 px-5 py-4 text-sm text-rhome-800"
@@ -82,33 +89,12 @@ export default async function TreatmentPage({ params }: Props) {
         </ul>
       </section>
 
-      <section className="bg-rhome-100/60 py-16">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="font-display text-3xl text-rhome-900">
-            How it works
-          </h2>
-          <div className="mt-10 grid gap-8 md:grid-cols-4">
-            {treatment.how.map((step, i) => (
-              <div key={step.title}>
-                <span className="font-display text-3xl text-rhome-300">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-2 text-lg font-semibold text-rhome-900">
-                  {step.title}
-                </h3>
-                <p className="mt-2 text-sm text-rhome-700">{step.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-3xl px-6 py-16">
         <h2 className="font-display text-3xl text-rhome-900">
           Frequently asked questions
         </h2>
         <div className="mt-8">
-          <FaqAccordion items={treatment.faqs} />
+          <FaqAccordion items={peptide.faqs} />
         </div>
       </section>
 

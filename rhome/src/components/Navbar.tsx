@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/treatments", label: "Treatments" },
+  { href: "/peptides", label: "Peptides" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
@@ -16,7 +16,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-2xl tracking-tight text-rhome-900"
         >
-          Rhome
+          RHOME
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

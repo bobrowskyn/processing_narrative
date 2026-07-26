@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Log in",
-  description: "Log in to your Rhome account.",
+  description: "Log in to your RHOME account.",
 };
 
 export default function LoginPage() {
@@ -42,7 +42,7 @@ export default function LoginPage() {
       </form>
 
       <p className="mt-6 text-center text-sm text-rhome-600">
-        New to Rhome?{" "}
+        New to RHOME?{" "}
         <Link
           href="/get-started"
           className="font-semibold text-rhome-700 hover:text-rhome-900"

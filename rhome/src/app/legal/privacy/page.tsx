@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Rhome collects, uses, and protects your information.",
+  description: "How RHOME collects, uses, and protects your information.",
 };
 
 export default function PrivacyPage() {
@@ -34,8 +34,9 @@ export default function PrivacyPage() {
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
             Information is used to facilitate care with licensed clinicians,
-            fulfill prescriptions through partner pharmacies, process
-            payment, and improve the safety and quality of the platform.
+            fulfill prescriptions through partner compounding pharmacies,
+            process payment, and improve the safety and quality of the
+            platform.
           </p>
         </div>
         <div>
