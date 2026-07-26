@@ -23,13 +23,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-rhone-100/60 py-20">
+    <section className="bg-rhome-100/60 py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <h2 className="font-display text-3xl text-rhone-900 sm:text-4xl">
-            How Rhone works
+          <h2 className="font-display text-3xl text-rhome-900 sm:text-4xl">
+            How Rhome works
           </h2>
-          <p className="mt-4 text-rhone-700">
+          <p className="mt-4 text-rhome-700">
             No office visits. No waiting rooms. Just a clear path from
             question to treatment.
           </p>
@@ -38,13 +38,13 @@ export default function HowItWorks() {
         <div className="mt-12 grid gap-8 md:grid-cols-4">
           {steps.map((step) => (
             <div key={step.number}>
-              <span className="font-display text-4xl text-rhone-300">
+              <span className="font-display text-4xl text-rhome-300">
                 {step.number}
               </span>
-              <h3 className="mt-3 text-lg font-semibold text-rhone-900">
+              <h3 className="mt-3 text-lg font-semibold text-rhome-900">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm text-rhone-700">{step.body}</p>
+              <p className="mt-2 text-sm text-rhome-700">{step.body}</p>
             </div>
           ))}
         </div>

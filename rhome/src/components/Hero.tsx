@@ -6,50 +6,50 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
         <div>
-          <span className="inline-flex items-center rounded-full bg-rhone-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-rhone-700">
+          <span className="inline-flex items-center rounded-full bg-rhome-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-rhome-700">
             Licensed clinicians · U.S. wide
           </span>
-          <h1 className="font-display mt-6 text-4xl leading-[1.1] text-rhone-900 sm:text-5xl md:text-6xl">
+          <h1 className="font-display mt-6 text-4xl leading-[1.1] text-rhome-900 sm:text-5xl md:text-6xl">
             Real care, without the{" "}
-            <span className="italic text-rhone-600">waiting room.</span>
+            <span className="italic text-rhome-600">waiting room.</span>
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-rhone-700">
-            Rhone connects you with licensed clinicians online for hair,
+          <p className="mt-6 max-w-lg text-lg text-rhome-700">
+            Rhome connects you with licensed clinicians online for hair,
             skin, weight, sexual health, and mental wellness — with
             treatment shipped straight to your door.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/get-started"
-              className="rounded-full bg-rhone-600 px-7 py-3.5 text-base font-semibold text-rhone-50 shadow-md shadow-rhone-600/20 transition hover:bg-rhone-700"
+              className="rounded-full bg-rhome-600 px-7 py-3.5 text-base font-semibold text-rhome-50 shadow-md shadow-rhome-600/20 transition hover:bg-rhome-700"
             >
               Get started
             </Link>
             <Link
               href="/how-it-works"
-              className="text-base font-semibold text-rhone-800 underline decoration-rhone-300 decoration-2 underline-offset-4 transition hover:text-rhone-900"
+              className="text-base font-semibold text-rhome-800 underline decoration-rhome-300 decoration-2 underline-offset-4 transition hover:text-rhome-900"
             >
               See how it works
             </Link>
           </div>
 
-          <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-rhone-200 pt-8">
+          <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-rhome-200 pt-8">
             <div>
               <dt className="sr-only">Members treated</dt>
-              <dd className="font-display text-2xl text-rhone-900">2M+</dd>
-              <p className="text-xs text-rhone-600">members treated</p>
+              <dd className="font-display text-2xl text-rhome-900">2M+</dd>
+              <p className="text-xs text-rhome-600">members treated</p>
             </div>
             <div>
               <dt className="sr-only">Average clinician response</dt>
-              <dd className="font-display text-2xl text-rhone-900">
+              <dd className="font-display text-2xl text-rhome-900">
                 &lt;24hrs
               </dd>
-              <p className="text-xs text-rhone-600">clinician response</p>
+              <p className="text-xs text-rhome-600">clinician response</p>
             </div>
             <div>
               <dt className="sr-only">Member rating</dt>
-              <dd className="font-display text-2xl text-rhone-900">4.8/5</dd>
-              <p className="text-xs text-rhone-600">member rating</p>
+              <dd className="font-display text-2xl text-rhome-900">4.8/5</dd>
+              <p className="text-xs text-rhome-600">member rating</p>
             </div>
           </dl>
         </div>

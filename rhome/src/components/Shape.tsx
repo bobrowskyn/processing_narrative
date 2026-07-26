@@ -16,12 +16,12 @@ const radii: Record<ShapeKind, string> = {
 };
 
 const tones: Record<ShapeKind, string> = {
-  circle: "from-rhone-300 to-rhone-600",
-  arch: "from-rhone-200 to-rhone-500",
-  leaf: "from-rhone-400 to-rhone-700",
-  wave: "from-rhone-300 to-rhone-500",
-  diamond: "from-rhone-500 to-rhone-800",
-  petal: "from-rhone-200 to-rhone-400",
+  circle: "from-rhome-300 to-rhome-600",
+  arch: "from-rhome-200 to-rhome-500",
+  leaf: "from-rhome-400 to-rhome-700",
+  wave: "from-rhome-300 to-rhome-500",
+  diamond: "from-rhome-500 to-rhome-800",
+  petal: "from-rhome-200 to-rhome-400",
 };
 
 export default function Shape({
@@ -36,7 +36,7 @@ export default function Shape({
       className={`relative overflow-hidden bg-gradient-to-br ${tones[kind]} ${radii[kind]} ${className}`}
     >
       <div className="absolute -right-4 -top-4 h-1/2 w-1/2 rounded-full bg-white/25 blur-xl" />
-      <div className="absolute -bottom-6 -left-6 h-2/3 w-2/3 rounded-full bg-rhone-900/10 blur-2xl" />
+      <div className="absolute -bottom-6 -left-6 h-2/3 w-2/3 rounded-full bg-rhome-900/10 blur-2xl" />
     </div>
   );
 }

@@ -19,11 +19,11 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rhone — Telehealth, without the waiting room",
-    template: "%s | Rhone",
+    default: "Rhome — Telehealth, without the waiting room",
+    template: "%s | Rhome",
   },
   description:
-    "Rhone connects you with licensed clinicians online for hair, skin, weight, sexual health, and mental wellness care — discreet, affordable, delivered to your door.",
+    "Rhome connects you with licensed clinicians online for hair, skin, weight, sexual health, and mental wellness care — discreet, affordable, delivered to your door.",
 };
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-rhone-50 text-rhone-900">
+      <body className="min-h-full flex flex-col bg-rhome-50 text-rhome-900">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

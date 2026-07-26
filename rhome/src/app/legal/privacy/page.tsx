@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Rhone collects, uses, and protects your information.",
+  description: "How Rhome collects, uses, and protects your information.",
 };
 
 export default function PrivacyPage() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="font-display text-4xl text-rhone-900">
+      <h1 className="font-display text-4xl text-rhome-900">
         Privacy Policy
       </h1>
-      <p className="mt-2 text-sm text-rhone-500">
+      <p className="mt-2 text-sm text-rhome-500">
         Placeholder policy for demonstration purposes only. Replace with
         counsel-reviewed content before launch.
       </p>
 
-      <div className="prose-rhone mt-10 space-y-8 text-rhone-800">
+      <div className="prose-rhome mt-10 space-y-8 text-rhome-800">
         <div>
-          <h2 className="text-lg font-semibold text-rhone-900">
+          <h2 className="text-lg font-semibold text-rhome-900">
             Information we collect
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
           </p>
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-rhone-900">
+          <h2 className="text-lg font-semibold text-rhome-900">
             How we use it
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           </p>
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-rhone-900">
+          <h2 className="text-lg font-semibold text-rhome-900">
             How we protect it
           </h2>
           <p className="mt-2 text-sm leading-relaxed">
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
           </p>
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-rhone-900">
+          <h2 className="text-lg font-semibold text-rhome-900">
             Your choices
           </h2>
           <p className="mt-2 text-sm leading-relaxed">

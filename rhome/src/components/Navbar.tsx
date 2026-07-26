@@ -10,13 +10,13 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-rhone-200/70 bg-rhone-50/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-rhome-200/70 bg-rhome-50/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="font-display text-2xl tracking-tight text-rhone-900"
+          className="font-display text-2xl tracking-tight text-rhome-900"
         >
-          Rhone
+          Rhome
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -24,7 +24,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-rhone-700 transition hover:text-rhone-900"
+              className="text-sm font-medium text-rhome-700 transition hover:text-rhome-900"
             >
               {link.label}
             </Link>
@@ -34,13 +34,13 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/login"
-            className="hidden text-sm font-medium text-rhone-700 hover:text-rhone-900 sm:block"
+            className="hidden text-sm font-medium text-rhome-700 hover:text-rhome-900 sm:block"
           >
             Log in
           </Link>
           <Link
             href="/get-started"
-            className="rounded-full bg-rhone-600 px-5 py-2.5 text-sm font-semibold text-rhone-50 shadow-sm transition hover:bg-rhone-700"
+            className="rounded-full bg-rhome-600 px-5 py-2.5 text-sm font-semibold text-rhome-50 shadow-sm transition hover:bg-rhome-700"
           >
             Get started
           </Link>

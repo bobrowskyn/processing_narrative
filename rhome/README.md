@@ -1,6 +1,6 @@
-# Rhone
+# Rhome
 
-A telehealth marketing site for **Rhone** — built with Next.js (App Router),
+A telehealth marketing site for **Rhome** — built with Next.js (App Router),
 TypeScript, and Tailwind CSS in a warm, neutral orange-and-brown palette.
 
 ## What's here
@@ -33,7 +33,7 @@ This is a standard Next.js app, so Vercel's zero-config import works:
 1. Push this repo to GitHub (already done if you're reading this from the
    repo).
 2. In Vercel, **Add New Project** → import the repo.
-3. If the Next.js app lives in a subdirectory (e.g. this `rhone/` folder
+3. If the Next.js app lives in a subdirectory (e.g. this `rhome/` folder
    inside a larger repo), set **Root Directory** to that folder in the
    project's Settings → General.
 4. Framework preset should auto-detect as **Next.js**; no build command
@@ -49,5 +49,5 @@ This is a standard Next.js app, so Vercel's zero-config import works:
 - Legal copy in `/legal/privacy` and `/legal/terms` is placeholder text and
   must be reviewed by counsel before this goes live as a real telehealth
   offering (state licensing, prescribing, and HIPAA requirements apply).
-- Swap the `rhone-*` color scale in `src/app/globals.css` to adjust the
+- Swap the `rhome-*` color scale in `src/app/globals.css` to adjust the
   palette; it's the only place brand colors are defined.

@@ -5,7 +5,7 @@ import CtaBanner from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Rhone is building telehealth that treats people like people — licensed clinicians, real plans, no waiting rooms.",
+    "Rhome is building telehealth that treats people like people — licensed clinicians, real plans, no waiting rooms.",
 };
 
 const values = [
@@ -15,7 +15,7 @@ const values = [
   },
   {
     title: "Plain about what we are",
-    body: "Rhone facilitates access to independent clinicians. We're clear about what we can and can't do, and we say no when something isn't a fit.",
+    body: "Rhome facilitates access to independent clinicians. We're clear about what we can and can't do, and we say no when something isn't a fit.",
   },
   {
     title: "Built for follow-through",
@@ -29,13 +29,13 @@ export default function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
           <div className="max-w-2xl">
-            <h1 className="font-display text-4xl text-rhone-900 sm:text-5xl">
-              We started Rhone because care shouldn&apos;t require a day off.
+            <h1 className="font-display text-4xl text-rhome-900 sm:text-5xl">
+              We started Rhome because care shouldn&apos;t require a day off.
             </h1>
-            <p className="mt-5 text-lg text-rhone-700">
+            <p className="mt-5 text-lg text-rhome-700">
               Millions of people put off ordinary health concerns — hair,
               skin, weight, mood, everyday symptoms — simply because getting
-              seen takes too long. Rhone exists to close that gap with
+              seen takes too long. Rhome exists to close that gap with
               licensed clinicians, transparent pricing, and treatment that
               shows up at your door.
             </p>
@@ -47,12 +47,12 @@ export default function AboutPage() {
           {values.map((v) => (
             <div
               key={v.title}
-              className="rounded-3xl border border-rhone-200 bg-rhone-50 p-7"
+              className="rounded-3xl border border-rhome-200 bg-rhome-50 p-7"
             >
-              <h2 className="text-lg font-semibold text-rhone-900">
+              <h2 className="text-lg font-semibold text-rhome-900">
                 {v.title}
               </h2>
-              <p className="mt-2 text-sm text-rhone-700">{v.body}</p>
+              <p className="mt-2 text-sm text-rhome-700">{v.body}</p>
             </div>
           ))}
         </div>

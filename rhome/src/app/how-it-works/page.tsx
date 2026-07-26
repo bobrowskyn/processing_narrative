@@ -5,7 +5,7 @@ import CtaBanner from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "See how a Rhone visit works, from online intake to a treatment plan delivered to your door.",
+    "See how a Rhome visit works, from online intake to a treatment plan delivered to your door.",
 };
 
 const details = [
@@ -32,11 +32,11 @@ export default function HowItWorksPage() {
     <>
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="max-w-2xl">
-          <h1 className="font-display text-4xl text-rhone-900 sm:text-5xl">
+          <h1 className="font-display text-4xl text-rhome-900 sm:text-5xl">
             From question to treatment, in four steps.
           </h1>
-          <p className="mt-4 text-lg text-rhone-700">
-            Rhone was built to remove the friction between noticing something
+          <p className="mt-4 text-lg text-rhome-700">
+            Rhome was built to remove the friction between noticing something
             and doing something about it.
           </p>
         </div>
@@ -45,14 +45,14 @@ export default function HowItWorksPage() {
       <HowItWorks />
 
       <section className="mx-auto max-w-4xl px-6 py-20">
-        <h2 className="font-display text-3xl text-rhone-900">The details</h2>
+        <h2 className="font-display text-3xl text-rhome-900">The details</h2>
         <div className="mt-8 grid gap-8 sm:grid-cols-2">
           {details.map((d) => (
             <div key={d.title}>
-              <h3 className="text-lg font-semibold text-rhone-900">
+              <h3 className="text-lg font-semibold text-rhome-900">
                 {d.title}
               </h3>
-              <p className="mt-2 text-sm text-rhone-700">{d.body}</p>
+              <p className="mt-2 text-sm text-rhome-700">{d.body}</p>
             </div>
           ))}
         </div>

@@ -11,17 +11,17 @@
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-fraunces);
 
-  --color-rhone-50: #fefcfa;
-  --color-rhone-100: #f6e9d8;
-  --color-rhone-150: #f0ddc4;
-  --color-rhone-200: #edd2b0;
-  --color-rhone-300: #e1b383;
-  --color-rhone-400: #d18f56;
-  --color-rhone-500: #c1713a;
-  --color-rhone-600: #a85a2c;
-  --color-rhone-700: #874523;
-  --color-rhone-800: #5c3220;
-  --color-rhone-900: #3b2317;
+  --color-rhome-50: #fefcfa;
+  --color-rhome-100: #f6e9d8;
+  --color-rhome-150: #f0ddc4;
+  --color-rhome-200: #edd2b0;
+  --color-rhome-300: #e1b383;
+  --color-rhome-400: #d18f56;
+  --color-rhome-500: #c1713a;
+  --color-rhome-600: #a85a2c;
+  --color-rhome-700: #874523;
+  --color-rhome-800: #5c3220;
+  --color-rhome-900: #3b2317;
 }
 
 body {
@@ -35,6 +35,6 @@ body {
 }
 
 ::selection {
-  background: var(--color-rhone-300);
-  color: var(--color-rhone-900);
+  background: var(--color-rhome-300);
+  color: var(--color-rhome-900);
 }

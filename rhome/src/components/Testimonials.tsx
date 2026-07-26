@@ -23,7 +23,7 @@ export default function Testimonials() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20">
       <div className="max-w-2xl">
-        <h2 className="font-display text-3xl text-rhone-900 sm:text-4xl">
+        <h2 className="font-display text-3xl text-rhome-900 sm:text-4xl">
           Members, not case numbers.
         </h2>
       </div>
@@ -32,13 +32,13 @@ export default function Testimonials() {
         {quotes.map((q) => (
           <figure
             key={q.name}
-            className="rounded-3xl border border-rhone-200 bg-rhone-50 p-7"
+            className="rounded-3xl border border-rhome-200 bg-rhome-50 p-7"
           >
-            <blockquote className="font-display text-lg leading-snug text-rhone-900">
+            <blockquote className="font-display text-lg leading-snug text-rhome-900">
               “{q.quote}”
             </blockquote>
-            <figcaption className="mt-5 text-sm text-rhone-600">
-              <span className="font-semibold text-rhone-800">{q.name}</span>
+            <figcaption className="mt-5 text-sm text-rhome-600">
+              <span className="font-semibold text-rhome-800">{q.name}</span>
               {" — "}
               {q.detail}
             </figcaption>

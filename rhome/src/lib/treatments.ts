@@ -266,7 +266,7 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Keep your history in one place",
-        body: "Every visit is saved to your Rhone record for the next time you need care.",
+        body: "Every visit is saved to your Rhome record for the next time you need care.",
       },
     ],
     faqs: [
